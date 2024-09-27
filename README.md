@@ -7,13 +7,14 @@ Este projeto é um microserviço para gerir endereços e todas as suas responsab
 ## Tecnologias Utilizadas
 
 - **Java**
-- **Spring Framework**
+- **Spring Boot**
 - **MySQL**: Utilizado como banco de dados.
 - **Docker**: O banco de dados foi containerizado por ser mais ágil para testar.
 - **Docker-compose**: Foi adicionado um docker-compose para a criação do banco de dados.
 - **Swagger**: Documentação dos DTO's e em breve descriçao do projeto e dos endpoints. 
 - **Conceitos**: Clean Code, Clean Architecture, REST.
 - **WebFlux**: Para consumir a API do ViaCep, e puxar o endereço via CEP.
+- **JPA Auditing**: Controle de criação e atualização das entidades automática.
 
 ## Funcionalidades
 
