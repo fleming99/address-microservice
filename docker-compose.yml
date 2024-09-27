@@ -1,0 +1,23 @@
+services:
+  mysql:
+    container_name: address-database
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: address
+      MYSQL_PASSWORD: address
+      MYSQL_DATABASE: address
+    volumes:
+      - address-database-data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+    networks:
+      - microservices-training
+    restart: unless-stopped
+
+networks:
+  microservices-training:
+    driver: bridge
+
+volumes:
+  address-database-data:
